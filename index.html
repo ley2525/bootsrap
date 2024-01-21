@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -7,55 +7,406 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="hello ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg bg-bastille shadow">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">dwwm</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">dwwm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="my-2 my-lg-0 mx-lg-2 btn btn-outline-danger" href="login.html">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="my-2 my-lg-0 mx-lg-2 btn btn-danger" href="register.html">Inscription</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+    <main>
+        <!-- Section de présentation -->
+        <section id="hero-section" class="d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 order-md-2">
+                        <img src="images/hero.png" class="img-fluid" alt="Image de bienvenue sur le site">
+                    </div>
+                    <div
+                        class="col-md-6 order-md-1 text-center d-flex flex-column justify-content-center align-items-center">
+                        <h1>Hello Ley</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-lg btn-dark">Lire les articles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section des services -->
+        <section id="services-section">
+            <h2 class="text-center display-5">Nos services</h2>
+
+
+
+            <Cart title="toto" img="" decription="" />
+            <Cart title="toto" img="" decription="" />
+            <Cart title="toto" img="" decription="" />
+
+            <div class="container">
+                <div class="phototrou"></div>
+                <div class="card-group">
+                    <div class="card m-2 shadow">
+                        <div class="d-flex justify-content-center align-items-center"> <img src="images/service1.png"
+                                class="" alt="service">
+                        </div>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+
+                    <div class="card m-2 shadow">
+                        <div class="d-flex justify-content-center align-items-center"> <img src="images/service2.png"
+                                class="" alt="serv">
+                        </div>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+
+                    <div class="card m-2 shadow">
+                        <div class="d-flex justify-content-center align-items-center"> <img src="images/service3.png"
+                                class="" alt="servi">
+                        </div>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-group">
+                    <div class="card m-2 shadow">
+                        <div class="d-flex justify-content-center align-items-center"> <img src="images/service4.png"
+                                class="" alt="service">
+                        </div>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+
+                    <div class="card m-2 shadow">
+                        <div class="d-flex justify-content-center align-items-center"> <img src="images/service5.png"
+                                class="" alt="serv">
+                        </div>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+
+                    <div class="card m-2 shadow">
+                        <div class="d-flex justify-content-center align-items-center"> <img src="images/service6.png"
+                                class="" alt="servi">
+                        </div>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="aboutus" class="py-5">
+
+            <h2 class="text-center display-5">Qui sommes nous?
+            </h2>
+            <div container>
+
+                <div class="row">
+                    <div class="col-md-6"><img src="images/about-us-1.png" class="img-fluid" alt="feraille"></div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+
+                    </div>
+                </div>
+                <hr class="py-2">
+                <div class="row">
+                    <div class="col-md-6 order-md-2"><img src="images/about-us-2.png" class="img-fluid" alt="feraille">
+                    </div>
+                    <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+
+                    </div>
+                </div>
+                <hr class="py-2">
+                <div class="row">
+                    <div class="col-md-6"><img src="images/about-us-3.png" class="img-fluid" alt="feraille"></div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consectetur?</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="tarif" class="py-5">
+            <h2 class="text-center display-5">Nos offres et tarifs</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Free</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$0<small
+                                        class="text-body-secondary fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>10 users included</li>
+                                    <li>2 GB of storage</li>
+                                    <li>Email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
+                                    free</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Pro</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$15<small
+                                        class="text-body-secondary fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>20 users included</li>
+                                    <li>10 GB of storage</li>
+                                    <li>Priority email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$29<small
+                                        class="text-body-secondary fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>30 users included</li>
+                                    <li>15 GB of storage</li>
+                                    <li>Phone and email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison-section" class="py-5">
+            <h2 class="text-center display-5">Comparez les prix</h2>
+            <div class="container">
+                <div class="table-responsive">
+
+                    <table class="table table-striped table-hover table-bordered text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th></th>
+                                <th>Gratuit</th>
+                                <th>Professionnel</th>
+                                <th>Entreprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Public</td>
+                                <td></td>
+                                <td>x</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Permission</td>
+                                <td></td>
+                                <td></td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td>Privé</td>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Privé</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Permission</td>
+                                <td>x</td>
+                                <td></td>
+                                <td>x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="questions" class="py-5">
+            <h2 class="text-center display-5">Foire aux questions</h2>
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center fs-5">dwwm</p>
+        <p class="text-center display-5">dwwm</p>
+    </footer>
+
+    <!-- La partie JS de BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
